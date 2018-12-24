@@ -1,0 +1,389 @@
+Sat Dec 22 21:43:10 EST 2018
+bash-3.2$ ./blackjack -h
+A summary of each command is provided below.
+
+  P, Pass:            Do NOT take a card and end turn.
+
+  H, Hit:             Request a card from the Dealer.
+
+  D, Double Down:     Double your wager and add an extra card to your hand.
+                      No additional cards may be requested after this point.
+
+  S, Split:           Split hand into two seperate hands. Note, this can
+                      only be done with a pair. An equal wager will be placed
+                      on the second hand. If an Ace is split, only one additional
+                      card is able to be added to either hand. Each hand is treated
+                      seperately, and a maximum of two splits can be performed in a 
+                      single round.
+
+  V, View Dealer's
+     Hand:            View the Dealer's Hand
+
+  Q, Quit Round:      Quit the round prematurely. Your wage will be forfeited.
+
+Need more help? Please view the README.
+bash-3.2$ ./blackjack
+
+Welcome to Blackjack!
+
+Please Enter the Number of Players at the Table: 4
+Please enter your names below: 
+Player 1: Vinod
+Player 2: Eric
+Player 3: Albert
+Player 4: John
+
+*********************** Round 1 ***********************
+Please place your bets below: 
+Vinod: $300
+Eric: $400
+Albert: $100
+John: $600
+All bets are final. Cards are now being dealt.
+
+It's your turn, Vinod: 
+	Hand 1: 15
+	Four of Diamonds
+	Ace of Clubs
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): H
+	You have added Jack of Clubs to Hand 1 for a total value of 15
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): H
+	You have added King of Hearts to Hand 1 for a total value of 25
+
+	Bust! Your Hand 1 value is above 21! You lose $300
+
+It's your turn, Eric: 
+	Hand 1: 9
+	Six of Clubs
+	Three of Clubs
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): D
+	You doubled down and increased your wager to $800
+	You take a Two of Hearts for a total value of 11
+
+It's your turn, Albert: 
+	Hand 1: 13
+	Eight of Hearts
+	Five of Hearts
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): H
+	You have added Four of Spades to Hand 1 for a total value of 17
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): P
+
+It's your turn, John: 
+	Hand 1: 17
+	Ten of Spades
+	Seven of Spades
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): v
+	Here's the dealer's visible card: 
+	Queen of Diamonds
+	What will you do with Hand 1?(P:H:S:D:V:Q): P
+
+The dealer reveals his/her Face Down Card: 
+	Hand: 19
+	Queen of Diamonds
+	Nine of Diamonds
+
+
+Round 1 Over! Here's what happened: 
+	Vinod loses $300 from busting Hand 1
+	Vinod has $700 remaining
+
+	Eric loses $800 from Hand 1
+	Eric has $200 remaining
+
+	Albert loses $100 from Hand 1
+	Albert has $900 remaining
+
+	John loses $600 from Hand 1
+	John has $400 remaining
+
+Play again? (Y:N): Y
+
+*********************** Round 2 ***********************
+Please place your bets below: 
+Vinod: $500
+Eric: $100
+Albert: $50
+John: $300
+All bets are final. Cards are now being dealt.
+The dealer has a Blackjack!
+Vinod loses $500.
+Eric loses $100.
+Albert loses $50.
+John loses $300.
+
+Round 2 Over! Here's what happened: 
+	Vinod has $200 remaining
+
+	Eric has $100 remaining
+
+	Albert has $850 remaining
+
+	John has $100 remaining
+
+Play again? (Y:N): Y
+
+*********************** Round 3 ***********************
+Please place your bets below: 
+Vinod: $50
+Eric: $20
+Albert: $10
+John: $100
+All bets are final. Cards are now being dealt.
+
+It's your turn, Vinod: 
+	Hand 1: 20
+	King of Clubs
+	Jack of Clubs
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): S
+	You have split Jack's and placed an equal wager on the second hand
+	Eight of Clubs was added to Hand 1 for a total value of 18
+	Ten of Hearts was added to Hand 2 for a total value of 20
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): P
+
+	What will you do with Hand 2?(P:H:S:D:V:Q): D
+	You doubled down and increased your wager to $100
+	You take a Queen of Spades for a total value of 30
+	Bust! Your hand value is above 21! You lose $100
+
+It's your turn, Eric: 
+	Hand 1: 12
+	Two of Clubs
+	King of Hearts
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): H
+	You doubled down and increased your wager to $40
+	You take a Ace of Diamonds for a total value of 13
+
+It's your turn, Albert: 
+	Hand 1: 6
+	Four of Hearts
+	Two of Hearts
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): D
+	Oops! Your wager is too high to double down.
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): H
+	You have added Five of Clubs to Hand 1 for a total value of 11
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): H
+	You have added Seven of Hearts to Hand 1 for a total value of 18
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): P
+
+It's your turn, John: 
+	Hand 1: 10
+	Six of Spades
+	Four of Spades
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): H
+	You have added Nine of Spades to Hand 1 for a total value of 19
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): H
+	You have added Jack of Diamonds to Hand 1 for a total value of 29
+
+	Bust! Your Hand 1 value is above 21! You lose $100
+
+The dealer reveals his/her Face Down Card: 
+	Hand: 17
+	Ace of Diamonds
+	Six of Diamonds
+
+
+Round 3 Over! Here's what happened: 
+	Vinod wins $50 from Hand 1
+	Vinod loses $100 from busting Hand 2
+	Vinod has $150 remaining
+
+	Eric loses $40 from Hand 1
+	Eric has $60 remaining
+
+	Albert wins $500 from Hand 1
+	Albert has $1350 remaining
+
+	John loses $100 from busting Hand 1
+	John has $0 remaining
+
+Play again? (Y:N): Y
+
+*********************** Round 4 ***********************
+Please place your bets below: 
+Vinod: $150
+Eric: $60
+Albert: $500
+All bets are final. Cards are now being dealt.
+
+It's your turn, Vinod: 
+	Hand 1: 18
+	King of Clubs
+	Eight of Diamonds
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): P
+
+It's your turn, Eric: 
+	Hand 1: 12
+	Two of Clubs
+	Ten of Clubs
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): H
+	You have added Three of Spades to Hand 1 for a total value of 15
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): H
+	You have added Five of Diamonds to Hand 1 for a total value of 20
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): P
+
+It's your turn, Albert: 
+	Hand 1: 14
+	Four of Hearts
+	Queen of Hearts
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): H
+	You have added Seven of Clubs to Hand 1 for a total value of 21
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): P
+
+The dealer reveals his/her Face Down Card: 
+	Hand: 17
+	Six of Spades
+	Ace of Spades
+
+
+Round 4 Over! Here's what happened: 
+	Vinod wins $150 from Hand 1
+	Vinod has $300 remaining
+
+	Eric wins $60 from Hand 1
+	Eric has $120 remaining
+
+	Albert wins $500 from Hand 1
+	Albert has $1850 remaining
+
+Play again? (Y:N): Y
+
+*********************** Round 5 ***********************
+Please place your bets below: 
+Vinod: $300
+Eric: $120
+Albert: $850
+All bets are final. Cards are now being dealt.
+
+BLACKJACK!! Albert wins $1275 with: 
+	Hand 1: 21
+	Queen of Diamonds
+	Ace of Spades
+
+It's your turn, Vinod: 
+	Hand 1: 12
+	Five of Hearts
+	Seven of Clubs
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): D
+	Oops! Your wager is too high to double down.
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): H
+	You have added Queen of Spades to Hand 1 for a total value of 22
+
+	Bust! Your Hand 1 value is above 21! You lose $300
+
+It's your turn, Eric: 
+	Hand 1: 19
+	Nine of Clubs
+	Ten of Diamonds
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): P
+
+The dealer reveals his/her Face Down Card: 
+	Hand: 20
+	Ace of Hearts
+	Four of Clubs
+
+
+Round 5 Over! Here's what happened: 
+	Vinod loses $300 from busting Hand 1
+	Vinod has $0 remaining
+
+	Eric loses $120 from Hand 1
+	Eric has $0 remaining
+
+	Albert has $3125 remaining
+
+Play again? (Y:N): Y
+
+*********************** Round 6 ***********************
+Please place your bets below: 
+Albert: $2000
+All bets are final. Cards are now being dealt.
+The dealer has a Blackjack!
+Albert loses $2000.
+
+Round 6 Over! Here's what happened: 
+	Albert has $1125 remaining
+
+Play again? (Y:N): Y
+
+*********************** Round 7 ***********************
+Please place your bets below: 
+Albert: $500
+All bets are final. Cards are now being dealt.
+
+It's your turn, Albert: 
+	Hand 1: 14
+	Four of Diamonds
+	Jack of Hearts
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): H
+	You have added Five of Spades to Hand 1 for a total value of 19
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): P
+
+The dealer reveals his/her Face Down Card: 
+	Hand: 13
+	Ace of Spades
+	Two of Diamonds
+
+	The dealer takes Nine of Hearts for a total value of 12
+	The dealer takes Queen of Clubs for a total value of 22
+	Bust! The dealer's hand value is above 21!
+
+Round 7 Over! Here's what happened: 
+	Albert wins $500 from Hand 1
+	Albert has $1625 remaining
+
+Play again? (Y:N): Y
+
+*********************** Round 8 ***********************
+Please place your bets below: 
+Albert: $1625
+All bets are final. Cards are now being dealt.
+
+It's your turn, Albert: 
+	Hand 1: 13
+	Three of Spades
+	Ten of Clubs
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): H
+	You have added Four of Hearts to Hand 1 for a total value of 17
+
+	What will you do with Hand 1?(P:H:S:D:V:Q): P
+
+The dealer reveals his/her Face Down Card: 
+	Hand: 18
+	Seven of Hearts
+	Ace of Diamonds
+
+
+Round 8 Over! Here's what happened: 
+	Albert loses $1625 from Hand 1
+	Albert has $0 remaining
+
+*********************** Game Over ***********************
+Thanks for Playing!
+Sat Dec 22 21:48:50 2018
