@@ -28,16 +28,15 @@ GLIBCXX_3.4.21 required.
 
 IV. File List
 -------------
-README 				This File
-Blackjack.h			Blackjack header 
-Card.h				Card header
-CardDeck.h			CardDeck header
-Dealer.h			Dealer header
-GamePlayer.h		GamePlayer header
-blackjack.cpp	    Driver Program
-Makefile			Makefile for driver
-sampleRound.txt     Output from a sample game
-blackjack           Executable
+README 				
+Blackjack.h			
+Card.h				
+CardDeck.h			
+Dealer.h			
+GamePlayer.h		
+blackjack.cpp	   
+Makefile			
+sampleRound.txt     
 
 V. Game Assumptions
 ---------------------
